@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form id="login-form" class="hidden">
+      <input type="text" placeholder="What is your name?" />
+      <input type="submit" value="login" />
+    </form>
+    <h1 class="greetingBox" class="hidden"><span id="greeting"></span></h1>
+    <h2 class="clockBox"><span id="clock">00:00:00</span></h2>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press" />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="music">
+      <span class="music"></span><br />
+      <span class="artist"></span>
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todos.js"></script>
+  </body>
+</html>
