@@ -21,10 +21,10 @@ function paintTodo(newTodo) {
   const createButton = document.createElement("button");
   createLi.id = newTodo.id;
   createSpan.innerText = newTodo.text;
-  createButton.innerText = "Delete";
+  createButton.innerText = "X";
   todoList.append(createLi);
-  createLi.append(createSpan);
   createLi.append(createButton);
+  createLi.append(createSpan);
 
   createButton.addEventListener("click", deleteTodo);
 }
@@ -38,7 +38,7 @@ function deleteTodo(event) {
 }
 
 const todoForm = document.querySelector("#todo-form");
-const todoList = document.querySelector("#todo-list");
+const todoList = document.querySelector("#todo-list div");
 
 const todoInput = todoForm.querySelector("input");
 

@@ -5,26 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Indie+Flower&display=swap" rel="stylesheet">
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input type="text" placeholder="What is your name?" />
-      <input type="submit" value="login" />
-    </form>
-    <h1 class="greetingBox" class="hidden"><span id="greeting"></span></h1>
-    <h2 class="clockBox"><span id="clock">00:00:00</span></h2>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="music">
-      <span class="music"></span><br />
-      <span class="artist"></span>
-    </div>
+    <div class="bgBlack"></div>
+    <section id="content">
+      <form id="login-form" class="hidden">
+        <div class="loginBox">
+          <input type="text" placeholder="What is your name?" />
+          <input type="submit" value="login" />
+        </div>
+      </form>
+      <h2 class="clockBox">
+        <span id="clock"></span><span id="second"></span>
+      </h2>
+      <h1 class="greetingBox" class="hidden"><span id="greeting"></span></h1>
+      <form id="todo-form" class="hidden">
+        <div>
+          <input type="text" placeholder="Write a To Do and Press" />
+          <div class="focus-border"></div>
+        </div>
+      </form>
+      <ul id="todo-list" class="hidden">
+        <div class="list"></div>
+      </ul>
+      <div id="music">
+        <span>Thema Music</span><br />
+        <span class="music"></span>
+        <span> - </span>
+        <span class="artist"></span>
+      </div>
+      <div id="weather">
+        <img id="weatherIcon"></img>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/music.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todos.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
